@@ -1,0 +1,49 @@
+.banner{
+    background-image: url('./images/banner.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+    width: 100%;
+    
+    
+    /* border-radius: 5px; */
+    
+}
+
+.center-bottom {
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+  }
+
+  .dotted-line {
+    border-top: 1px dashed #04c65b; /* You can adjust the thickness and color */
+  }
+  .dotted-line2{
+    border-bottom: 1px dashed #04c65b;
+  }
+  .dotted-line3{
+    border-bottom: 2px dashed #f7f8f7;
+  }
+  
+  .vertical-line {
+    border-left: 2px dashed #04c65b; /* You can adjust the thickness and color */
+    height: 300px; /* Adjust the height as needed */
+  }
+  .vertical-line-2 {
+    border-left: 2px dashed #f9f6f6; /* You can adjust the thickness and color */
+    height: 100px;
+    /* Adjust the height as needed */
+  }
+  .vertical-line-3 {
+    border-left: 2px dashed #bf7b7b; /* You can adjust the thickness and color */
+    height:869px;
+    /* Adjust the height as needed */
+  }
