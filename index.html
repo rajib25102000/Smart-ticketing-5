@@ -32,11 +32,11 @@
         <!-- Banner section -->
         <div class="banner relative mb-20">
             <div class="">
-                <h1 class="text-4xl font-extrabold text-white mb-2">End-to-End Travel with <br>
+                <h1 class="text-4xl font-extrabold text-white mb-4">End-to-End Travel with <br>
                     <span class="text-lime-400">P Paribahan</span>
                 </h1>
-                <p class="text-white">Online Ticketing made easy ! tickets online hassle-free.</p>
-                <button class="text-white font-bold btn bg-lime-600 border-0 hover:bg-sky-700 mt-3 ">Buy Tickets</button>
+                <p class="text-white mb-4">Online Ticketing made easy ! tickets online hassle-free.</p>
+                <button onclick="buyTicketToTicketFild('pHporibahon')" id="buy-ticket" class="text-white font-bold btn bg-lime-600 border-0 hover:bg-sky-700 mt-12 ">Buy Tickets</button>
             </div>
         </div>
         <div class="flex gap-5 justify-center center-bottom  ">
@@ -99,7 +99,7 @@
         </section>
 
         <!-- p.h paribohon -->
-        <section class="mt-20 border-t-2 border-lime-500 rounded-t-3xl bg-slate-200 ">
+        <section id="pHporibahon" class="mt-20 border-t-2 border-lime-500 rounded-t-3xl bg-slate-200 ">
             <div class="text-center mt-10">
                 <h1 class="text-4xl font-bold  mb-2 ">P.H Paribahan</h1>
                 <p class="text-center ">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
@@ -121,7 +121,7 @@
                         <div class="top-right   ">
                             <button class="flex rounded-xl gap-2 text-lime-600 bg-gray-200 p-4">
                                 <img src="./images/seat-green.png" alt="">
-                                40 Seats left
+                                <span id="up-down-seat">40</span> Seats left
                             </button>
                         </div>
                     </div>
@@ -183,59 +183,59 @@
                     </div>
                     <div class="all-seat flex gap-10 mt-20">
                         <div class="all-left-seat grid grid-cols-3 gap-4">
-                            <div class="per-seat font-bold p-4">A</div>
-                            <div class="per-seat bg-gray-200 font-bold p-4 rounded-xl">A1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">A2</div>
-                            <div class="per-seat  p-4 font-bold">B</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B2</div>
-                            <div class="per-seat   p-4 font-bold">C</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C2</div>
-                            <div class="per-seat  p-4 font-bold">D</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D2</div>
-                            <div class="per-seat  p-4 font-bold">E</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E2</div>
-                            <div class="per-seat  p-4 font-bold">F</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F2</div>
-                            <div class="per-seat  p-4 font-bold">G</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G2</div>
-                            <div class="per-seat  p-4 font-bold">H</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H2</div>
-                            <div class="per-seat  p-4 font-bold">I</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I2</div>
-                            <div class="per-seat  p-4 font-bold">J</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J1</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J2</div>
+                            <div class="seatNum font-bold p-4">A</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl"> A1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">A2</button>
+                            <div class="seatNum  p-4 font-bold">B</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B2</button>
+                            <div class="seatNum   p-4 font-bold">C</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C2</button>
+                            <div class="seatNum  p-4 font-bold">D</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D2</button>
+                            <div class="seatNum  p-4 font-bold">E</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E2</button>
+                            <div class="seatNum  p-4 font-bold">F</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F2</button>
+                            <div class="seatNum  p-4 font-bold">G</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G2</button>
+                            <div class="seatNum  p-4 font-bold">H</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H2</button>
+                            <div class="seatNum  p-4 font-bold">I</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I2</button>
+                            <div class="seatNum  p-4 font-bold">J</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J1</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J2</button>
 
                         </div>
                         <div class="all-right-seat grid grid-cols-2 gap-4">
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">A3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">A4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I4</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J3</div>
-                            <div class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J4</div>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">A3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">A4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">B4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">C4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">D4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">E4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">F4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">G4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">H4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">I4</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J3</button>
+                            <button class="per-seat bg-gray-200 p-4 font-bold rounded-xl">J4</button>
                         </div>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                     <div class="calculate-area">
                         <div class="seat-details-area bg-gray-200 p-4 rounded-lg">
                             <div class="seat-heading flex justify-between font-bold">
-                                <p>Seat<sup><span class="bg-lime-600 text-white px-4 rounded-lg">0</span></sup></p>
+                                <p>Seat<sup><span id="seatCountUp" class="bg-lime-600 text-white px-4 rounded-lg">0</span></sup></p>
                                 <p>class</p>
                                 <p>Price</p>
                             </div>
@@ -259,7 +259,7 @@
                             <hr class="dotted-line2 my-2 w-full">
                             <div class=" flex justify-between mt-2 font-bold">
                                 <h3>Total Price</h3>
-                                <h3>BDT <span>0</span></h3>
+                                <h3>BDT <span id="">0</span></h3>
                             </div>
                             <div class="mt-3 ">
                                 <input class="h-12 rounded-lg text-center border-0 outline-none w-4/5" type="text" placeholder="Have any copun?">
